@@ -1,0 +1,18 @@
+services:
+  dulferlanding:
+    # Use your Docker image name here
+    image: goswamirohit/dulferlanding:v1
+    container_name: dulferlanding
+    restart: unless-stopped
+    ports:
+      - "55012:3000"
+    # This is the key line that tells Docker to read the variables from the .env file
+    # env_file:
+    #   - .env.production
+
+    environment:
+      #- NEXT_PUBLIC_APP_URL=${NEXT_PUBLIC_APP_URL}
+      - NODE_OPTIONS=--max-old-space-size=1536
+      # Uncomment once the real backend/auth is wired up:
+      # - DATABASE_URL=${DATABASE_URL}
+      # - JWT_SECRET=${JWT_SECRET}
