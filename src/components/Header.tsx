@@ -1,19 +1,15 @@
-// components/Header.tsx
-
 export default function Header() {
   return (
-    <header className="header">
-      <a href="/" className="wordmark wordmark--sm" aria-label="dulfer. cement home">
-        <span className="wordmark__main">dulfer.</span>
-        <span className="wordmark__sub">cement</span>
+    <header className="site-header">
+      <a className="header-logo" href="/" aria-label="DULFER Cement home">
+        <img src="/dulferlogo.jpeg" alt="DULFER Cement" />
       </a>
-      <p className="tracked header__tag">
-        People
-        <br />
-        Materials
-        <br />
-        Progress
-      </p>
+      <nav aria-label="Main navigation" className="site-nav">
+        <a href="#about">About DULFER</a>
+        <a href="#approach">Our Approach</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a className="header-cta" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
     </header>
   );
 }

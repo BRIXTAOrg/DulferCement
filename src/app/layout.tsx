@@ -1,40 +1,26 @@
 import type { Metadata } from "next";
-import { Outfit, Jost } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "./globals.css";
 
-const outfit = Outfit({
-  subsets: ["latin"],
-  weight: ["700", "800"],
-  variable: "--font-wordmark",
-  display: "swap",
-});
-
-const jost = Jost({
-  subsets: ["latin"],
-  weight: ["300", "400", "500"],
-  variable: "--font-text",
-  display: "swap",
-});
-
 export const metadata: Metadata = {
-  title: "dulfer. cement | Building soon",
-  description:
-    "dulfer. cement: strong foundations, brighter tomorrows. Our website is being built.",
+  title: "DULFER Cement | Built for what comes next",
+  description: "Discover DULFER cement. Get in touch for product and dealer enquiries.",
+  icons: { icon: "/dulferlogo.ico", shortcut: "/dulferlogo.ico" },
+  openGraph: {
+    title: "DULFER Cement",
+    description: "A considered approach to cement for everyday construction.",
+    type: "website",
+  },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${outfit.variable} ${jost.variable}`}>
+    <html lang="en">
       <body>
-        <div className="shell">
+        <div className="site-shell">
           <Header />
-          <main className="main">{children}</main>
+          <main>{children}</main>
           <Footer />
         </div>
       </body>
