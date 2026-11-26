@@ -11,7 +11,7 @@ export default function Contact() {
           <p className="contact-intro">For Product Information, Dealer Enquiries or any other questions, get in touch with the DULFER team.</p>
         </div>
         <div className="contact-panel">
-          <span className="contact-index">WE’RE HERE TO HELP</span>
+          <span>FOR QUERRIES & DEALERSHIP ENQUIRIES</span>
           <h3>Talk to<br />our team.</h3>
           <a className="button button--light button--wide" href="mailto:contact@dulfercement.co.in">Email us <span>↗</span></a>
           <a className="button button--light button--wide contact-method" href={`tel:${phone}`}>Call us <span>↗</span></a>
