@@ -1,7 +1,8 @@
 import { Hand, HandHeart, Handshake } from "lucide-react";
 
 type FeatureIconProps = {
-  index: number;
+  index?: number;
+  name?: "research" | "bag" | "layers" | string;
 };
 
 export default function FeatureIcon({ index }: FeatureIconProps) {
