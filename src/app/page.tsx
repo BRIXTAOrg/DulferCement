@@ -7,6 +7,7 @@ export default function Home() {
     <>
       <Hero />
       <About />
+      <div className="shared-bg-band">
       <section className="approach-strip" id="approach">
         <div className="approach-strip__heading">
           <p className="eyebrow eyebrow--dark">WHAT WE BRING TO THE TABLE</p>
@@ -40,6 +41,7 @@ export default function Home() {
         </div>
       </section>
       <Contact />
+    </div >
     </>
   );
 }
